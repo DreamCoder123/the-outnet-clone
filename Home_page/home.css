@@ -1,0 +1,123 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#nav{
+    width: 100%;
+    height: 50px;
+    background-color: #f2f2f2;
+    display: flex;
+    gap: 50%;
+    font-size: small;
+}
+.signin{
+    height: 13px;
+    margin-top: 10px;
+    padding-right: 20px;
+    padding-left: 40px;
+    border-right: 1px solid gray;
+}
+.signin span{
+    margin-right: 10px;
+}
+
+.left{
+    display: flex;
+    gap: 10px;
+    padding: 4px;
+}
+.india{
+    text-align: center;
+    display: flex;
+    padding: 4px;
+    
+}
+.ind{
+
+    margin-left: 10px;
+    margin-top: 15%;
+}
+#flag{
+    width: 20px;
+    height: 20px;
+    margin-top: 6px;
+    border-radius: 50%;
+}
+.right{
+    display: flex;
+    gap: 10px;
+}
+.rt{
+    border-right: 1px solid gray;
+    padding-right: 10px;
+}
+.rtl{
+    border: none;
+}
+
+.upper-head{
+    display: flex;
+    /* gap: 20px; */
+    justify-content: space-between;
+    padding: 10px;
+}
+.lefthead{
+    /* padding: 10px; */
+    padding-left: 40px;
+}
+.upbtn
+{
+    height: 30px;
+    /* padding: 20px; */
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+}
+.wbtn{
+    border-right: 1px solid gray;
+    padding-right: 20px;
+}
+.mbtn{
+    padding: 20px;
+}
+.righthead{
+    display: flex;
+    width: auto;
+    gap: 30px;
+    padding-right: 50px;
+    padding-top: 18px;
+}
+.midhead{
+    width: auto;
+    justify-content: center;
+}
+
+.srchrt{
+    height: 28px;
+   display: flex; 
+   padding-right: 10px;
+   border-right: 1px solid gray;
+}
+.iconrt{
+    width: 22px;
+    height: 22px;
+}
+#hrtop{
+    width: 96%;
+}
+.nav-head{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1px solid gray;
+}
+.benefitBar{
+    display: flex;
+    width:auto;
+    height: 100px;
+}
+.benefitBar{
+    
+}
