@@ -179,3 +179,17 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
 }
+.four{
+    width: 96%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 4%;
+}
+.fourbtn{
+    padding: 2%;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 1px solid black;
+    margin-top: 1%;
+}
