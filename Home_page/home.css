@@ -193,3 +193,18 @@ body{
     border-bottom: 1px solid black;
     margin-top: 1%;
 }
+.uptext{
+    font-weight: lighter !important;
+    font-size: xx-small !important;
+    font-size: 12px !important;
+}
+#tag{
+    width: 15%;
+    text-align: center;
+}
+#hrfooter{
+    width: 50%;
+}
+.footer-main{
+    display: flex;
+}
