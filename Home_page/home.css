@@ -104,7 +104,7 @@ body{
     height: 22px;
 }
 #hrtop{
-    width: 96%;
+    width: 97%;
 }
 .nav-head{
     display: flex;
@@ -199,12 +199,80 @@ body{
     font-size: 12px !important;
 }
 #tag{
-    width: 15%;
-    text-align: center;
+    width: 95%;
+    
 }
 #hrfooter{
-    width: 50%;
+    width: 97%;
+}
+/* .footer-main{
+    display: flex;
+} */
+.footer-right-logo{
+    display: flex;
+    width: 50px;
+    justify-content: space-between;
+    gap: 20px;
+}
+.phone-logo{
+    width: 20px;
+}
+.phone-no{
+    display: flex;
+    gap: 20px;
+}
+.footer-bottom-logo{
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 20px;
 }
 .footer-main{
-    display: flex;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+.footer-bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: end;
+    width: 126%;
+    margin: 2%;
+}
+.footer-bottom-txt{
+    font-size: small;
+}
+hr{
+    width: 97%;
+    color: rgb(245, 242, 242) !important;
+}
+.mrp{
+    width: 50%;
+}
+.footer-left-btn{
+    width: auto;
+    padding: 15px;
+    padding-right: 94px;
+}
+.footer-left-sbt{
+    width: auto;
+    padding: 15px;
+    /* padding-right: 100px; */
+    font-weight: 520;
+}
+.social{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    gap: 10px;
+    width: 20%;
+}
+footer{
+    /* margin-bottom: 50%; */
+    padding-bottom: 20px;
+}
+.shopol:hover{
+    background-color: black;
+    color: aliceblue;
 }
