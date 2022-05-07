@@ -308,3 +308,66 @@ footer{
     background-color: black;
     color: aliceblue;
 }
+
+/* popup */
+
+.containerh {
+    position: relative;
+  }
+  
+  .icon {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 2px 5px;
+    width: fit-content;
+  }  
+.containerh:hover .popup {
+    opacity: 1;
+    display: block;
+  }
+  .containerh:hover .benefitBar {
+    display: none;
+    background-color: whitesmoke;
+  }
+  .popup {
+    width: 1200px;
+    height: 500px;
+    margin-top: 18px;
+    background-color: whitesmoke;
+    padding: 1px 20px;
+    position: absolute;
+    top: 20px;
+    transition: all 0.25s ease;
+    opacity: 0;
+    display: none;
+    position: absolute;
+    left: -5;
+    padding: 30px;
+    margin-left: 0px;
+  }
+  .contpop{
+      display: flex;
+      width: 100%;
+      margin: auto;
+  }
+  .firstpop,.secondpop{
+      width: 15%;
+      text-align: center;
+      margin: auto;
+  }
+  .thirdpopup{
+      width: 60%;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+  }
+  .im3,.im4{
+    width: 280px;
+  }
+  .firstpop{
+      padding-left: 30px;
+  }
+  .im4{
+      padding-right: 30px;
+  }
