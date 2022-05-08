@@ -1,0 +1,118 @@
+* {
+    margin : 0px;
+    padding: 0px;
+  }
+  #bag {
+    display: flex;
+    width : 90%;
+    margin : auto;
+   
+  }
+  #container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 500px);
+    gap: 40px ;
+    width : 60%;
+    margin-right: 50px;
+    margin-top: 100px;
+    margin-left: 20px;
+  
+
+  }
+  #container >div{
+    margin-bottom: -80px;
+    
+    margin-bottom: 20px;
+  }
+   img +h3,p,p,p {
+    text-align: center;
+    margin-top: 10px;
+    
+  }
+  img {
+      height : 70%;
+      width : 100%;
+  }
+  img+h3 {
+  font-size:30px ;
+  }
+  h3+p,p,p {
+    font-size: 15px;
+  }
+  #ra {
+    width : 20%;
+    margin-right: 20px;
+    
+    margin-top: 100px;
+    margin-left: 20px;
+  }
+ #filterVenue{
+   font-size: 25px;
+    width : 80%;
+   
+    background-color: gray;
+    color : white ;
+    padding: 10px;
+    
+  }
+  #Venue{
+    
+    font-size: 25px;
+    width : 80%;
+    margin-top: 50px;
+    background-color:gray;
+    color : white ;
+    padding: 10px;
+  
+  }
+ #Va {
+  font-size: 25px;
+    width : 80%;
+    margin-top: 50px;
+    background-color: gray;
+    color : white ;
+    padding: 10px;
+    
+  }
+ #Vb {
+  font-size: 25px;
+    width : 80%;
+    margin-top: 50px;
+    background-color: gray;
+    color : white ;
+    padding: 10px;
+  }
+  #Vc{
+    font-size: 25px;
+    width : 80%;
+    margin-top: 50px;
+    background-color:gray;
+    color : white ;
+    padding: 10px;
+  }
+  #Vd {
+    font-size: 25px;
+    width : 80%;
+    margin-top: 50px;
+    background-color: gray;
+    color : white ;
+    padding: 10px;
+  }
+  #container button{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 3px bisque;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+}
+#container button:hover{
+    text-shadow: 2px 2px 3px blue;;
+    background:linear-gradient(to left,rgb(225, 192, 192),rgb(146, 238, 241));
+}
