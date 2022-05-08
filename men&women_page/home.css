@@ -37,6 +37,7 @@ a{
     padding: 4px;
     
 }
+
 .ind{
 
     margin-left: 10px;
@@ -59,7 +60,9 @@ a{
 .rtl{
     border: none;
 }
+/* navbar css ends  */
 
+/* header css starts */
 .upper-head{
     display: flex;
     /* gap: 20px; */
@@ -85,6 +88,12 @@ a{
 .mbtn{
     padding: 20px;
 }
+/* #mainlogo{
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMjc2IDI1Ij48ZGVmcz48cGF0aCBpZD0iYSIgZD0iTTAgMjQuMjFoMjc2VjBIMHoiLz48L2RlZnM+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48bWFzayBpZD0iYiIgZmlsbD0iI2ZmZiI+PHVzZSB4bGluazpocmVmPSIjYSIvPjwvbWFzaz48cGF0aCBmaWxsPSIjMDAwIiBkPSJNMjc2IDQuMTZWLjMzN2gtMTYuNDU4VjQuMTZoNi4yMzN2MTkuNzEzaDMuOTU1VjQuMTZIMjc2em0tMzcuNzY2IDE1Ljg5di02LjYzM2g2LjQ1NlY5LjU5NGgtNi40NTZWNC4xNmg5LjQ3OVYuMzM3aC0xMy40MzV2MjMuNTM2aDEzLjQzNXYtMy44MjJoLTkuNDh6bS0xOC4yNDkgNC4xNlYuMzM4aC0zLjk1NXYxNS4xMDRMMTk5LjQ2IDB2MjMuODczaDMuOTU2VjguNzdsMTYuNTcgMTUuNDR6bS0zMy4yNS0yMC4wNVYuMzM3aC0xNi40NTlWNC4xNmg2LjIzM3YxOS43MTNoMy45NTZWNC4xNmg2LjI3em0tNDQuMjYxIDkuNDgyVi4zMzdoLTMuOTU2djEzLjQ1NWMwIDYuNTIgNC4xNDIgMTAuNDE5IDkuODkgMTAuNDE5IDUuNzQ3IDAgOS44OS0zLjg5OCA5Ljg5LTEwLjQyVi4zMzhoLTMuOTU3djEzLjMwNWMwIDQuMTYtMi4xNjQgNi43NDYtNS45MzMgNi43NDYtMy43NyAwLTUuOTM0LTIuNTg2LTUuOTM0LTYuNzQ2em0tMjguNjIzLTkuODJjNC42NjUgMCA4LjIxIDMuNjM2IDguMjEgOC4yODMgMCA0LjY0Ny0zLjU0NSA4LjI4My04LjIxIDguMjgzLTQuNjY1IDAtOC4yMS0zLjYzNi04LjIxLTguMjgzIDAtNC42NDcgMy41NDUtOC4yODIgOC4yMS04LjI4MnptMCAyMC4zODljNi44MyAwIDEyLjE2Ni01LjI4NSAxMi4xNjYtMTIuMTA2QzEyNi4wMTcgNS4yODUgMTIwLjY4IDAgMTEzLjg1IDBzLTEyLjE2NiA1LjI4NC0xMi4xNjYgMTIuMTA1YzAgNi44MjEgNS4zMzYgMTIuMTA2IDEyLjE2NiAxMi4xMDZ6bS00Ni43OS00LjE2di02LjYzNGg2LjQ1N1Y5LjU5NGgtNi40NTZWNC4xNmg5LjQ3OVYuMzM3SDYzLjEwNnYyMy41MzZINzYuNTR2LTMuODIyaC05LjQ4em0tMjIuMjAzIDMuODIyaDMuOTU1Vi4zMzdoLTMuOTU1djkuMjU3SDMzLjEzOVYuMzM3aC0zLjk1NXYyMy41MzZoMy45NTVWMTMuNDE3aDExLjcxOXYxMC40NTZ6TTE2LjQ1OCA0LjE2Vi4zMzdIMFY0LjE2aDYuMjMydjE5LjcxM2gzLjk1NlY0LjE2aDYuMjd6IiBtYXNrPSJ1cmwoI2IpIi8+PC9nPjwvc3ZnPg==);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: black;
+} */
 .righthead{
     display: flex;
     width: auto;
@@ -117,6 +126,10 @@ a{
     margin: auto;
     margin-bottom: 1px solid gray;
 }
+
+/* header css ends(if in your page beneficiary bar is present then)  */
+
+/* beneficiary css starts here */
 .benefitBar{
     display: flex;
     width: 96%;
@@ -153,6 +166,10 @@ a{
     margin-top: 10x;
     margin-right: 20px;
 }
+
+/* beneficiary css ends here */
+
+
 .container-main{
     width: 100%;
     margin: auto;
@@ -203,9 +220,10 @@ a{
     font-size: 12px !important;
 }
 #tag{
-    width: 95%;
-    
+    width: 95%;  
 }
+
+/* footer css start */
 #hrfooter{
     width: 97%;
 }
@@ -241,12 +259,17 @@ a{
 .footer-bottom{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: end;
-    width: 126%;
+    justify-content: flex-end;
+    width: 100%;
     margin: 2%;
 }
 .footer-bottom-txt{
     font-size: small;
+    justify-content: space-between;
+    /* border-left: 20px; */
+    /* justify-content: end;
+    justify-content: flex-end; */
+    width: auto;
 }
 hr{
     width: 97%;
@@ -272,11 +295,81 @@ hr{
     gap: 10px;
     width: 20%;
 }
+.s-icon{
+    width: 40px !important;
+}
 footer{
     /* margin-bottom: 50%; */
     padding-bottom: 20px;
 }
+
+/* footer css end */
+
+/* hover pattern */
 .shopol:hover{
     background-color: black;
     color: aliceblue;
 }
+
+/* popup */
+
+.containerh {
+    position: relative;
+  }
+  
+  .icon {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 2px 5px;
+    width: fit-content;
+  }  
+.containerh:hover .popup {
+    opacity: 1;
+    display: block;
+  }
+  .containerh:hover .benefitBar {
+    display: none;
+    background-color: whitesmoke;
+  }
+  .popup {
+    width: 1200px;
+    height: 500px;
+    margin-top: 18px;
+    background-color: whitesmoke;
+    padding: 1px 20px;
+    position: absolute;
+    top: 20px;
+    transition: all 0.25s ease;
+    opacity: 0;
+    display: none;
+    position: absolute;
+    left: -5;
+    padding: 30px;
+    margin-left: 0px;
+  }
+  .contpop{
+      display: flex;
+      width: 100%;
+      margin: auto;
+  }
+  .firstpop,.secondpop{
+      width: 15%;
+      text-align: center;
+      margin: auto;
+  }
+  .thirdpopup{
+      width: 60%;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+  }
+  .im3,.im4{
+    width: 280px;
+  }
+  .firstpop{
+      padding-left: 30px;
+  }
+  .im4{
+      padding-right: 30px;
+  }
