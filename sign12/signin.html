@@ -356,7 +356,7 @@
            
             localStorage.setItem("login",JSON.stringify(Userid))
            
-            window.location.href="index_women.html"
+            window.location.href="../Home_page/index.html"
             
        }
        else 
@@ -383,9 +383,10 @@
                 }
                 if(userData==null){
                     alert("please Create an account");
-                }else if(userData.userMail==Data.email && userData.userpass==Data.password){
+                }
+                else if(userData.usMail==Data.email && userData.userpass==Data.password){
                      alert("signed in sucessfull");
-                    window.location.href="Home_page/index.html"
+                    window.location.href="../Home_page/index.html"
                     localStorage.setItem("signin",JSON.stringify(userData));
                 }
                 else if(userData.userpass!=Data.password)
@@ -398,8 +399,8 @@
                     
                 }
             });
-            </script> -->
-     
+            </script>  
+    
      
     </html>
         
