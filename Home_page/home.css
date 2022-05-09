@@ -273,7 +273,7 @@ a{
 }
 hr{
     width: 97%;
-    color: rgb(245, 242, 242) !important;
+    color: rgba(216, 211, 211, 0.911) !important;
 }
 .mrp{
     width: 50%;
@@ -373,3 +373,21 @@ footer{
   .im4{
       padding-right: 30px;
   }
+
+  /* css for editorial */
+  .header__center {
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.2rem;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header__center::before,
+.header__center::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: gray;
+}
