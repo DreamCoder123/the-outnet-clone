@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WishList </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://www.theoutnet.com/favicon.ico" type="image/x-icon">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.top {
+    width: 90%;
+    margin: 25px auto;
+    line-height: 35px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+a {
+    padding-left: 10px;
+    font-size: 0.9em;
+    color: gray;
+}
+
+#first {
+    padding-left: 0px;
+}
+
+.top>h3 {
+    letter-spacing: 4px;
+    font-size: 1.4em;
+    font-weight: 450;
+}
+
+.top>p {
+    font-size: 0.85em;
+    padding-bottom: 20px;
+}
+
+#icons {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    /* border: 2px solid red; */
+}
+
+#icons>img:hover {
+    cursor: pointer;
+}
+
+#grid {
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    /* border: 2px solid red; */
+}
+
+#grid>div>img {
+    width: 100%;
+}
+
+#grid>div>img+p {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+#grid>div>img+p+p {
+    text-align: center;
+    font-size: 13px;
+}
+
+#grid>div>img+p+p+p {
+    text-align: center;
+    color: red;
+    margin-top: 20px;
+    font-weight: 450;
+}
+
+.disPrice {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.disPrice>span {
+    font-size: 14px;
+}
+
+.disPrice>span:first-child {
+    text-decoration: line-through;
+}
+
+.btn1 {
+    width: 100%;
+    margin: 20px 0px;
+    padding: 18px;
+    font-weight: 450;
+    background-color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#grid>div>button:hover {
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.btn2 {
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 20px;
+    font-weight: 450;
+    background-color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.filter{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#sort{
+    padding: 12px 20px;
+}
+</style>
+</head>
+
+<body>
+    <div class="top">
+        <h3>Wish List</h3>
+        <p>Keep track of all your favorite items here and add them to your Shopping Bag to purchase later</p>
+        <a href="#" id="first">In Stock</a>
+        <a href="#">Sold Out</a>
+        <a href="#">Unavailable in location</a>
+        <div id="icons">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NCIgaGVpZ2h0PSI0NCI+PHBhdGggZD0iTTI2LjQwMSAxNi40MTRsLTguOCA4LjguNTczLjU3MyA4LjgtOC44eiIvPjxwYXRoIGQ9Ik0xNC41NzIgMjUuOTkybDEyLjExLTEyLjEwOCAyLjgyIDIuODItMTIuMTE1IDEyLjEwNC0yLjgxNS0yLjgxNnptMS45NiAzLjE5bC0yLjE5Mi40NDUtLjU4NC0uNTY2LjQ0Ni0yLjIxIDIuMzMgMi4zM3pNMzAuNDA4IDEyLjk2YTMuMjgzIDMuMjgzIDAgMDAtNC42LS4wNGwtLjAxOS4wMDEtMTIuNTM2IDEyLjUzNy0uMTQ4LjE0OEwxMiAzMS4zNzRsNS43MjYtMS4wOTUuMDQyLS4wMSAxMi42NzQtMTIuNjc0LjAxLS4wMzdhMy4yODQgMy4yODQgMCAwMC0uMDQ0LTQuNTk4eiIvPjwvc3ZnPg=="
+                alt="">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NCIgaGVpZ2h0PSI0NCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2U9IiMxMjEwMEIiPjxwYXRoIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMjIgOXYxNi42NDVtLTQtMTIuNDgxbDQuMDI5LTQuNyAzLjkwNSA0LjciLz48cGF0aCBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0xOC42MiAxNy4yNDJIMTN2MTguODJoMTcuODk4di0xOC44MkgyNS40NSIvPjwvZz48L3N2Zz4="
+                alt="">
+        </div>
+    </div>
+
+    <div class="filter">
+
+        <select name="" id="sort">
+            <option value="none">Sort by</option>
+            <option value="htl">Price high to low</option>
+            <option value="lth">Price low to high</option>
+        </select>
+
+    </div>
+    <div id="grid">
+
+    </div>
+</body>
+
+</html>
+<script>
+    var wishlistData = JSON.parse(localStorage.getItem("wish"));
+displayData(wishlistData)
+
+var bagArr = JSON.parse(localStorage.getItem("atc")) || []
+document.querySelector("#sort").addEventListener("change", sort)
+
+
+function displayData(data) {
+    document.querySelector("#grid").innerHTML = "";
+    data.forEach(function (elem, index) {
+        var card = document.createElement("div")
+
+        var img = document.createElement("img")
+        img.setAttribute("src", elem.img)
+
+        var title = document.createElement("p")
+        title.innerText = elem.brand
+
+        var category = document.createElement("p")
+        category.innerText = elem.name
+
+        var price = document.createElement("p")
+        price.innerText = elem.price
+
+        var discount = document.createElement("div")
+        discount.setAttribute("class", "disPrice")
+
+        var dis = document.createElement("span")
+        dis.innerText = elem.price2
+
+        var off = document.createElement("span")
+        off.innerText = elem.discount
+
+        var btn = document.createElement("button")
+        btn.setAttribute("class", "btn1")
+        btn.innerText = "Add To Bag"
+        btn.addEventListener("click", function () {
+            btn.innerText = "Added"
+            addToBag(elem)
+        })
+
+        var del = document.createElement("button")
+        del.setAttribute("class", "btn2")
+        del.innerText = "Delete"
+        del.addEventListener("click", function () {
+            Delete(elem, index)
+        })
+
+        discount.append(dis, off)
+        card.append(img, title, category, price, discount, btn, del)
+        document.querySelector("#grid").append(card)
+    })
+}
+
+function addToBag(elem) {
+    bagArr.push(elem)
+    localStorage.setItem("atc", JSON.stringify(bagArr))
+}
+
+function Delete(elem, index) {
+    wishlistData.splice(index, 1)
+    localStorage.setItem("wsh", JSON.stringify(wishlistData))
+    displayData(wishlistData)
+}
+
+function sort() {
+    var value = document.querySelector("#sort").value
+   
+    if (value == "htl") {
+        wishlistData.sort(function (a, b) {
+            let x = a.price.slice(1, -1)
+            let y = b.price.slice(1, -1)
+            return Number(y) - Number(x);
+        })
+        displayData(wishlistData)
+    }
+
+    if (value == "lth") {
+        wishlistData.sort(function (a, b) {
+            let x = a.price.slice(1, -1)
+            let y = b.price.slice(1, -1)
+            return Number(x) - Number(y);
+        })
+        displayData(wishlistData)
+    }
+}
+</script>
