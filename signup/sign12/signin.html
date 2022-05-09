@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<div id="top">
+    <img id="pic" src="pic1.jpg" alt="background"/>
+    
+    <div class="Myform">
+         <form id="Newform">
+        </br>
+            <p>Welcome</p>
+         
+            <hr>
+    </br>
+            <lable id="email ">
+                Email Address
+            </lable>
+            <input id="a" type="text" />
+        </br>
+    </br>
+</br>
+            
+<div class="radio1">
+                    <input type="radio" id="hasAccount0"   name="hasAccount" value="true">
+                    <label for="hasAccount0">I'm already registered</label>
+                </div>
+                 <div class="radio1">
+                    <input type="radio"  value="false" onclick="location.href = 'signup.html';">
+                    <label  for="hasAccount1" > I'm new to THE OUTNET </label>
+             </div>
+             </br>
+             </br>
+             <lable>
+                Password
+            </lable>
+            <input id="b" type="password" /> 
+            
+            <br />
+            <button>sign in</button>
+            
+                
+        
+            <lable>
+                <p id="para">Forgot your password? <a href="#"></a></p>
+            </lable>
+            
+            
+         </form>
+     </div>   
+    </div>
+  
+</body>
+
+        <!-- <script>
+            var Userid=JSON.parse(localStorage.getItem("MYstorage"));
+    
+    document.querySelector("#Newform").addEventListener("submit",function(event){
+
+    //    map=[]
+
+       event.preventDefault();
+
+       var MyCollection={
+           mail:Newform.a.value,
+           Pass:Newform.b.value,
+       }
+
+    //    map.push(MyCollection)
+       console.log(map);
+       
+   
+      
+       if(MyCollection.mail==Userid.Email && MyCollection.Pass==Userid.Password){
+           
+            localStorage.setItem("login",JSON.stringify(Userid))
+           
+            window.location.href="index_women.html"
+            
+       }
+       else 
+       {
+           alert("The specified email or password are not correct!")
+           
+           
+       }
+    
+   
+       
+     }) 
+
+        </script> -->
+         <script>
+            var form = document.querySelector("form");
+            var userData = JSON.parse(localStorage.getItem("userData"));
+        
+            form.addEventListener("submit",function(event){
+                event.preventDefault();
+                var Data = {
+                    mail:Newform.a.value,
+                   Pass:Newform.b.value,
+                }
+                if(userData==null){
+                    alert("please Create an account");
+                }else if(userData.userMail==Data.email && userData.userpass==Data.password){
+                     alert("signed in sucessfull");
+                    window.location.href="file:///C:/Users/HP/Desktop/signinAndsignup/the-outnet-clone/Home_page/index.html"
+                    localStorage.setItem("signin",JSON.stringify(userData));
+                }
+                else if(userData.userpass!=Data.password)
+                {
+                    alert("The specified email or password are not correct!")
+                }
+                
+                else{
+                    alert("user does not exist");
+                    
+                }
+            });
+            </script> -->
+     
+     
+    </html>
+        
+         
+    
