@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart-out</title>
+    <style>
+        #raj2{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5,auto);
+        grid-gap: 10px;
+        margin-left: 25px;
+        }
+        #raj2 img{
+            width: 280px;
+            height: 350px;
+            border-radius: 5px;
+        }
+        #raj2,h2,p{
+            text-align: center;
+        }
+        #raj2 h2{
+            color: rgb(58, 173, 244);
+        }
+        #raj2>div{
+            border-radius: 10px;
+            box-shadow: 2px 2px  3px rgb(199, 199, 236);
+        }
+        #raj2 button{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 2px 2px 3px bisque;
+            font-size: 15px;
+            color: black;
+            font-weight: bold;
+        }
+        #raj2 button:hover{
+            text-shadow: 2px 2px 3px blue;;
+            background:linear-gradient(to left,rgb(225, 192, 192),rgb(146, 238, 241));
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+      <h1 id="bro"></h1>
+    <div id="raj2"></div>
+  </body>
+</html>
+<script>
+    var array1 = JSON.parse(localStorage.getItem("dataone")) || [];
+
+var sum=0;
+var vishwa=array1.reduce(function(acc,ele){
+    sum=sum+Number(ele.price);
+},0)
+
+document.querySelector("#bro").innerHTML="Total-Price"+"--"+sum;
+
+dannybhai(array1);
+
+function dannybhai(data) {
+  data.forEach(function (ele, index) {
+    var box = document.createElement("div");
+
+    var one = document.createElement("img");
+    one.setAttribute("src", ele.avatar);
+
+    var two = document.createElement("h2");
+    two.innerText = ele.brand;
+
+    var three = document.createElement("p");
+    three.innerText = ele.name;
+
+    var four = document.createElement("p");
+    four.innerText = ele.price;
+
+    var five = document.createElement("p");
+    five.innerText = ele.offer;
+
+    var six=document.createElement("button");
+    six.innerText="Remove";
+    six.style.cursor="pointer";
+    six.addEventListener("click",function(){
+        dolly(ele,index);
+    })
+
+    box.append(one,two,three,four,five,six);
+    document.querySelector("#raj2").append(box);
+   });
+}
+
+function dolly(ele,index){
+    array1.splice(index,1);
+    localStorage.setItem("dataone",JSON.stringify(array1));
+    window.location.reload();
+}
+</script>
