@@ -8,7 +8,7 @@ This is Our Team Collaborative Project which is Fashion Wears Website where you 
 
 How To Use IT.
 
-If You are in homepage If you are men than choose men section If you are women then choose that category just click on your favourite Product which you want to purchased.
+If You are new then First Signup and if you are existing one then click on signin in homepage If you are men than choose men section If you are women then choose that category just click on your favourite Product which you want to purchased.
 
 
 ![Screenshot (993)](https://user-images.githubusercontent.com/104290715/189978651-b32499bc-24df-4546-97a0-64418ca5dd3a.png)
