@@ -1,12 +1,20 @@
+# The Outnet Clone
+
+
+## Tech Stack
+#### HTML
+#### CSS 
+#### JAVASCRIPT
+
+
+## About
+This is Our Team Collaborative Project We have the team of six members and this website clone we have created in the unit 2 of masai within 4 days of hard work and tried to make as as similar as the original one. This is a Fashion Wears Website where you can purchased your favourite Fashionable clothes, Bags wearables and other stuffs.
+
+## Deploy Link
 Netlify Link 
 https://funny-churros-0ef475.netlify.app/
 
-
-                                                     ###DECCAN CHRONICLE
-                                                    
-This is Our Team Collaborative Project which is Fashion Wears Website where you can purchased your favourite clothes, Bags and other wearables.
-
-How To Use IT.
+## How To Use IT
 
 If You are new then First Signup and if you are existing one then click on signin in homepage If you are men than choose men section If you are women then choose that category just click on your favourite Product which you want to purchased.
 
