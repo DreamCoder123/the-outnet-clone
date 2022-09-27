@@ -2,7 +2,7 @@ Netlify Link
 https://funny-churros-0ef475.netlify.app/
 
 
-                                                    <h1>DECCAN CHRONICLE</h1>
+                                                     ###DECCAN CHRONICLE
                                                     
 This is Our Team Collaborative Project which is Fashion Wears Website where you can purchased your favourite clothes, Bags and other wearables.
 
