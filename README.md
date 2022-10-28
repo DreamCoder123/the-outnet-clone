@@ -1,6 +1,5 @@
 # The Outnet Clone
 
-
 ## Tech Stack
 #### HTML
 #### CSS 
