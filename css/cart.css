@@ -1,0 +1,180 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#container_ash{
+    width: 94%;
+    margin: auto;
+    margin-top: 5%;
+    background-color: rgb(242, 242, 242);
+    padding: 1.5% 0% 1% 0%;
+    font-size: 14px;
+}
+#title_ash{
+    width:92.7%;
+    margin: auto;
+    height: 100px;
+    padding:1%;
+    background-color: white;
+    letter-spacing: 1px;
+    margin-left: 3%;
+}
+#title_ash > h1, #title_ash > p{
+    background-color: white;
+}
+#box_main_ash{
+    display: grid;
+    grid-template-columns: 65% 35%;   
+    gap: 0.75%;
+    margin: auto;
+    width:94%;
+    margin-top: 0.6%;
+}
+#list_ash{
+    width: 100%;
+}
+#total_ash{
+    text-align: center;
+    padding: 2.5%;
+    background-color: white;
+    height: 450px;
+}
+#total_ash > h4, #total_ash > p{
+    background-color: white;
+}
+#cost_ash, #final_cost{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: white;
+}
+#cost_1_ash, #final_cost_1{
+    text-align:left;
+   margin-left: 5%;
+   line-height: 12px;
+   background-color: white;
+}
+#cost_2_ash, #final_cost_2{
+    text-align:right;
+    margin-right: 5%;
+    background-color: white;
+}
+hr{
+    height:1px;
+    color:grey;
+    width:90%;
+    margin: auto;
+    margin-top: 3%;
+    background-color: white;
+}
+#promo_input{
+    width:60%;
+    height: 36px;
+    background-color: white;
+    border: 1px solid black;
+}
+#promo{
+    background-color: white;
+}
+#promocode_1{
+    background-color: white;
+}
+#apply_ash{
+    width:30%;
+    height: 41px;
+    background-color: rgb(242, 242, 242);
+    border: none;
+    cursor: pointer;
+}
+#checkout{
+    width:96%;
+    margin: auto;
+    background-color: black;
+    color: white;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+#pay_option{
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+#pay_option > div > img{
+    width:50%;
+    height: 30px;
+}
+#box_ash{
+    display: grid;
+    grid-template-columns: 25% 60% 15%;
+    padding: 2%;
+    margin-bottom: 1%;
+    background-color: white;
+    font-weight: lighter;
+}
+#box1_ash{   
+    margin: auto;
+    background-color: white;
+}
+#box1_ash > img{
+    width: 100%;
+    height: 130px;
+}
+#box2_ash{
+    background-color: white;
+}
+#box2_ash > h3, #box2_ash >p{
+    background-color: white;
+}
+#box21_ash{
+    display: flex;
+    gap:3%;
+    background-color: white;
+}
+#box21_ash > button{
+    margin-top: 1%;
+    width: 8%;
+    height: 30px;
+    background-color: white;
+    border: 1px solid grey;
+    cursor: pointer;
+    font-size:larger;
+    color: grey;
+}
+#box2_ash > h3{
+    letter-spacing: 1px;
+}
+#box22_ash{
+    background-color: white;
+    display: flex;
+    gap:7%;
+    margin-top: -4%;
+}
+#box3_ash{
+    display: flex;
+    align-items:flex-end;
+    align-content:center;
+    gap:12%;
+    background-color: white;
+}
+#box3_ash > button{
+    width: 30%;
+    height: 30px;
+    background-color: white;
+    border: none;
+    font-size:x-large;
+    cursor: pointer;
+    color: grey;
+}
+#stkprice{
+    text-decoration-line:line-through;
+}
+#dollar_box{
+    display: flex;
+    background-color: white;
+    color: rgb(198, 20, 20);
+}
+
+@media all and (min-width:80px) and (max-width:720px){
+    #box_main_ash{
+        grid-template-columns: 100%;
+    }
+}

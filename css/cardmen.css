@@ -1,0 +1,111 @@
+/* Header div */
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header{
+    display: flex;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows:repeat(1, 280px) ;
+    padding: auto;
+    margin: 100px;
+    grid-gap: 15%;
+}
+
+.text{
+    text-align: left;
+    padding: 0;
+}
+.image{
+    left: unset;
+    right: 0;
+    margin: 0 120px 0 0;
+}
+.image img{
+    height: 280px;
+    width: 280px;
+}
+
+#products{
+    margin-left:6%;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 10% 19% ;  
+}
+
+.product img{
+    width: 195px;
+    height: 294px;
+    
+}
+
+.product{
+    text-align: center;
+    line-height: 2%;
+    margin-bottom: -100px;
+}
+
+.strikep {
+    text-decoration: line-through;
+   
+}
+
+#container {
+    margin-bottom: auto;
+}
+
+/* filters and sorting */
+
+#parent {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+}
+
+
+#filter {
+    /* margin-top: 20px; */
+    width: 226px;
+    height: 1500px;
+    border-left:none ;
+}
+#filter input{
+    width: 15px;
+    height: 15px;
+    margin-right: 12px;
+}
+label{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+#filter>div {
+    display: grid;
+    width: 88%;
+    padding: 20px 0px 15px 25px;
+    border-bottom: 1px solid #e9e9ed;
+    border-right:#e9e9ed solid 1px;
+
+}
+
+#filter>div>div {
+    display: grid;
+    margin-bottom: 10px;
+
+}
+
+#sort {
+    padding: 5px;
+    margin-left: 84.8%;
+    margin-bottom: -40px;
+   
+}
+
+#parentTop {
+    display: flex;
+}
+
+#parentTop #sort{
+   
+    margin-left: 40px;
+}
+
