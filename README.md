@@ -11,7 +11,7 @@ This is Our Team Collaborative Project We have the team of six members and this 
 
 ## Deploy Link
 Netlify Link 
-https://funny-churros-0ef475.netlify.app/
+https://the-outnet-clone.netlify.app/
 
 ## How To Use IT
 
